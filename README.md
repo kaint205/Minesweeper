@@ -1,7 +1,8 @@
 # Minesweeper Project Planning Sheet & Dev Log
 
-> Minesweeper project coded by Thomas Kain for Ms. Qiu's AP Computer
-> Science class Homeroom C20, 5th period
+> Minesweeper project coded by Thomas Kain for Ms. Qiu's AP Computer Science class
+> 
+> Homeroom C20, 5th period
 
 ## Planning Document
 
@@ -17,7 +18,7 @@ This project should have two main classes: `Minesweeper` and `Main`.
 - `private int flags` - The # of flags placed on the board.
 - `private int moves` - The # of moves made.
 - `private int gameState` - Contains the state of the game.
-  --1 is when the game is lost.
+  - -1 is when the game is lost.
   - 0 is when the game is uninitialized (no bombs set, no numbers placed)
   - 1 is during normal play.
   - 2 is when the game is won.
@@ -54,7 +55,7 @@ This project should have two main classes: `Minesweeper` and `Main`.
 
 - `public static void main` - You know what this does.
 - `public static void initMinesweeper` - Takes the input for the size and bomb count of a custom Minesweeper board (using `inputIntBounds`) and constructs a new `Minesweeper` object with those specifications.
-- `public static int inputIntBounds` *(added during development)*- A shortcut for keeping the player's choices within the right bounds.
+- `public static int inputIntBounds` *(added during development)* - A shortcut for keeping the player's choices within the right bounds.
   - Within a while loop (`while (true)`), takes the player's input and stores it as an integer.
   - If that integer is within the upper and lower bounds as specified in the method, breaks from the loop and returns the integer.
   - Otherwise, prints an error message and the loop executes again.
